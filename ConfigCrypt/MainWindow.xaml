@@ -1,0 +1,14 @@
+﻿<Window x:Class="ConfigCrypt.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Encryption - Decryption Utility" Height="518" Width="578" Icon="Images\tene.ico" ResizeMode="CanMinimize" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <TextBox Height="23" Margin="60,221,0,0" Name="textFile" VerticalAlignment="Top" HorizontalAlignment="Left" Width="346" AllowDrop="True" PreviewDragOver="textFile_PreviewDragOver" PreviewDragEnter="textFile_PreviewDragEnter" KeyUp="textFile_KeyUp" />
+        <Button Content="Browse" Height="23" HorizontalAlignment="Left" Margin="429,221,0,0" Name="btnBrowse" VerticalAlignment="Top" Width="75" ButtonBase.Click="btnBrowse_Click"/>        
+        <Label Content="Select Config File: (e.g. web.config or App.Config)" Height="28" HorizontalAlignment="Left" Margin="60,195,0,0" Name="lblFile" VerticalAlignment="Top" />
+        <Button Content="Encrypt" Height="23" HorizontalAlignment="Left" Margin="231,301,0,0" Name="btnEncrypt" VerticalAlignment="Top" Width="75" Click="btnEncrypt_Click" IsEnabled="False" />
+        <Label Content="eClinicalWorks | © 2017 All rights reserved" Height="27" HorizontalAlignment="Left" Margin="155,452,0,0" Name="lblCopyRyt" VerticalAlignment="Top" Width="235" Foreground="#C2000000" />
+        <TextBlock Height="40" HorizontalAlignment="Left" Margin="188,74,0,0" Name="textBlock1" Text="eClinicalWorks" VerticalAlignment="Top" Width="184" Foreground="#FF214259" FontSize="28" FontFamily="Shruti" FontStyle="Italic" FontWeight="Bold" />
+        <Image Height="45" HorizontalAlignment="Left" Margin="255,21,0,0" Name="image1" Stretch="Fill" VerticalAlignment="Top" Width="42" Source="Images\tene.png" StretchDirection="Both" />        
+    </Grid>
+</Window>
